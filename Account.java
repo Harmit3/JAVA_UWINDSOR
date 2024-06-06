@@ -1,5 +1,6 @@
 package Bank;
 import java.util.*;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -18,9 +19,33 @@ class Account {
    }
 
 
-   // Getters and setters
-   // ...
+   // Getters
+   public String getAccountNumber() {
+       return accountNumber;
+   }
+
+   public String getCustomerName() {
+       return customerName;
+   }
+
+   public double getBalance() {
+       return balance;
+   }
+
+   // Setters
+   public void setAccountNumber(String accountNumber) {
+       this.accountNumber = accountNumber;
+   }
+
+   public void setCustomerName(String customerName) {
+       this.customerName = customerName;
+   }
+
+   public void setBalance(double balance) {
+       this.balance = balance;
+   }
 }
+
 
 
 class Bank {
@@ -117,7 +142,7 @@ class Bank {
            System.out.print("Enter amount to deposit: ");
            double amount = scanner.nextDouble();
            scanner.nextLine(); // Consume newline character
-           account.setBalance(account.Balance() + amount);
+           account.setBalance(account.getBalance() + amount);
            System.out.println("Deposit successful. New balance: " + account.getBalance());
        } else {
            System.out.println("Account not found.");
