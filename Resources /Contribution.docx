@@ -1,0 +1,74 @@
+Contribution of The Project
+
+Harmit's Responsibilities:
+Design the System:
+
+Outline Data Models: 
+Design the data structures and relationships between classes such as Bank, Account, Transaction, Admin, Employee, and Customer. Determine how these entities will interact with each other.
+
+User Interface Design: 
+Conceptualize the initial user interface, focusing on how users (Admins, Employees, Customers) will interact with the system. Develop initial menus and options for these users.
+
+Implement Core Functionalities:
+Bank Operations Interface: 
+Define the BankOperations interface to outline the basic operations for accounts.
+
+Exception Handling: 
+Implement custom exceptions (InvalidAmountException, InsufficientFundsException, InputValidationException) to handle various error conditions throughout the system.
+
+Validator Class: 
+Develop the Validator class to ensure user inputs are valid and secure, covering aspects like name, phone number, email, SIN, DOB, password, and address.
+
+Testing and Refinement:
+Conduct Thorough Testing:
+ Test the system, focusing on input validation, transaction processing, and system stability.
+
+Refine Based on Feedback:
+ Make necessary adjustments based on the testing feedback, ensuring the system is user-friendly and reliable.
+
+Main Application Logic: 
+Implement the overall structure and flow of the application, including initial login processes and user selection (Admin, Employee, Customer). Ensure seamless integration and interaction between different parts of the system.
+
+
+
+
+
+
+
+Yang's Responsibilities:
+Outline Account Structures: Focus on the detailed design of the Account abstract class and its subclasses (CheckingAccount, SavingsAccount), ensuring they meet the outlined specifications and requirements.
+
+Implement Core Functionalities:
+Account Abstract Class: 
+Implement the core Account class that handles individual account details and transactions. Ensure thread safety and proper transaction management.
+
+Concrete Account Classes: 
+Develop the CheckingAccount and SavingsAccount classes, extending from Account, with specific behaviors and constructors.
+
+Transaction Class: 
+Implement the Transaction class to handle individual transactions, ensuring they are accurately recorded and displayed.
+
+Admin Class: 
+Implement the Admin class to handle admin-specific functionalities, such as login, authentication, and account management (including deleting accounts).
+
+Integrate Advanced Features:
+Multithreading: 
+Integrate multithreading into account operations to ensure thread safety and efficient handling of concurrent transactions.
+
+Enhanced Security Measures: 
+Implement security features like password encryption, secure data storage, and safe transaction handling to protect sensitive user information.
+
+Employee and Customer Classes: 
+Develop the Employee and Customer classes, handling their respective functionalities like account management, transaction operations, and report generation. Ensure that these classes interact smoothly with the rest of the system.
+
+Testing and Refinement:
+Conduct Thorough Testing: 
+Test the multithreading implementations and security features to ensure they perform as expected under various conditions.
+
+Refine Based on Feedback: 
+Adjust and refine the advanced features and account functionalities based on testing results and user feedback, ensuring they are robust and secure.
+
+Combined Responsibilities Overview:
+Together, we will collaborate to design, implement, and refine a comprehensive banking management system. Harmit will primarily focus on designing data models, user interface flows, input validation, and handling exceptions. Yang will focus on implementing core account and transaction functionalities, enhancing system security, and integrating advanced features like multithreading.
+
+Both of us will contribute to testing and refining the system, ensuring that the final product is user-friendly, secure, and performs reliably under various conditions.
